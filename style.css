@@ -1,0 +1,169 @@
+body {
+  background: #333;
+  font-family: league spartan;
+}
+
+.navbar {
+  padding: 0.8rem;
+}
+
+.navbar .navbar-nav {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  gap: 0.9rem;
+  overflow: hidden;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 1.09rem;
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  -webkit-transition: -webkit-transform 0.34s ease-in;
+  transition: -webkit-transform 0.34s ease-in;
+  transition: transform 0.34s ease-in;
+  transition: transform 0.34s ease-in, -webkit-transform 0.34s ease-in;
+}
+
+.navbar .navbar-nav .nav-link:before {
+  content: attr(data-hover);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 50%;
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  -webkit-transform: translateY(65%);
+          transform: translateY(65%);
+}
+
+.navbar .navbar-nav .nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fede00;
+  bottom: 100%;
+  left: 0%;
+  -webkit-transition: width 0.60s;
+  transition: width 0.60s;
+}
+
+.navbar .navbar-nav .nav-link:hover:after {
+  width: 100%;
+}
+
+.navbar .navbar-nav .linkcv {
+  font-size: 1.03rem;
+  padding: 0.6rem;
+  position: relative;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  background: #fede00;
+  border-radius: 30% 70% 40% 75% / 20% 10% 30% 20%;
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+}
+
+.navbar .navbar-nav .linkcv:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.container {
+  margin: 1.4rem auto;
+  padding: 1.2rem;
+}
+
+.container .row .namebox {
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.container .row .namebox h2 {
+  line-height: 2.8rem;
+}
+
+.container .row .namebox h2 span {
+  color: #fede00;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+}
+
+.container .row .namebox h3 {
+  color: #777;
+  line-height: 2.8rem;
+}
+
+.container .row .namebox h3 span {
+  font-size: 1.8rem;
+  font-weight: 800;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.container .row .namebox h3 .vr {
+  position: absolute;
+  height: 200px;
+  bottom: 50%;
+  left: 39%;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .navbar-nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 280px;
+    -webkit-transition: -webkit-transform 0s;
+    transition: -webkit-transform 0s;
+    transition: transform 0s;
+    transition: transform 0s, -webkit-transform 0s;
+  }
+  .navbar .navbar-nav .nav-link {
+    width: 100%;
+  }
+  .navbar .navbar-nav .nav-link:before {
+    position: relative;
+    display: none;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .navbar .navbar-nav .nav-link:after {
+    bottom: 0%;
+  }
+  .container {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=style.css.map */
